@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>Javascript</title>
+	</head>
+	<body>
+	<div id="simples">
+	</div>
+	<script>
+	//Criar uma programação em javascript que guarde 10 valores digitados pelo usuário e identifique o maior valor.
+	
+	var valores=[10];
+	
+		for(var x = 0; x < 10; x++){
+			valores[x]= prompt ("Digite um número " + x + "");
+		}
+	
+	
+	/*for (var i=0; i<valores.length; i++){
+		valores[i]= prompt ("Digite um número " + i + "");
+		document.write(valores[i]);
+	}*/
+		valores.sort(function(a, b){return b - a});
+		document.write(valores[0]);
+
+	</script>
+	</body>
+</html>
